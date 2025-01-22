@@ -2,7 +2,7 @@ namespace ScanI2C{
     //% blockId=ScanI2C
     //% block="i2cCurrentAdd"
     export function i2cCurrentAdd(){
-        for (let i = 64; i < 69; i++) {
+        for (let i = 0; i < 128; i++) {
             pins.i2cWriteNumber(i, 0, NumberFormat.UInt8LE, false)
             let data = pins.i2cReadNumber(i, NumberFormat.UInt8LE, false)
             if (data == 1) {
