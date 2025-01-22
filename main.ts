@@ -1,6 +1,6 @@
 namespace ScanI2C{
     //% blockId=ScanI2C
-    //% block="scan"
+    //% block="i2cCurrentAdd"
     export function i2cCurrentAdd(){
         for (let i = 64; i < 69; i++) {
             pins.i2cWriteNumber(i, 0, NumberFormat.UInt8LE, false)
